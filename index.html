@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Heads & Tails Game</title>
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center mt-5">
+      <div class="card col-9 rounded-5 p-3">
+        <div class="heading text-center m-3">
+          <h1 class="text-white">Heads & Tails Game</h1>
+        </div>
+        <div class="row">
+          <div class="playerName col-sm-12 col-md-12 col-lg-6">
+            <div class="userOne text-white fw-bold">Firts Player's Name:</div>
+            <input
+              id="fisrtName"
+              type="text"
+              class="rounded-pill px-2 w-100 border-white border-1"
+            />
+          </div>
+          <div class="playerInput col-sm-12 col-md-12 col-lg-6">
+            <div class="userOne text-white fw-bold">Second Player's Name:</div>
+            <input
+              id="secondName"
+              type="text"
+              class="rounded-pill px-2 w-100 border-white border-1"
+            />
+          </div>
+        </div>
+        <div class="Image text-center mt-5">
+          <img
+            id="img"
+            class="img-fluid"
+            src="./Assets/Coins.png"
+            alt="coin"
+            height="300px"
+          />
+        </div>
+        <div class="select text-center">
+          <h3>Choose one of these</h3>
+        </div>
+        <div class="selectCoin d-flex gap-3 justify-content-center mb-3">
+          <button
+            onclick="heads()"
+            class="btn btn-light fw-bold rounded-pill px-3"
+          >
+            Heads
+          </button>
+          <button
+            onclick="tails()"
+            class="btn btn-light fw-bold rounded-pill px-3"
+          >
+            Tails
+          </button>
+        </div>
+
+        <div class="Coinselected text text-center">
+          <div class="firstPlayer">
+            <h3 id="firstPlayerSelected" class="text-white"></h3>
+          </div>
+          <div class="secondPlayer">
+            <h3 id="secondPlayerSelected" class="text-white"></h3>
+          </div>
+        </div>
+        <div class="button text-center">
+          <button
+            onclick="flipCoin()"
+            class="btn btn-primary rounded-pill fw-bold px-4"
+          >
+            Flip the Coin
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="pooper.js"></script>
+    <script src="bootstrapscript.js">
+      </scrip>
+          <script src="bundle.js">
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

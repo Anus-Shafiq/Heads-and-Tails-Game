@@ -1,0 +1,14 @@
+body {
+  background-image: url(./Assets/Bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background: rgba(246, 217, 52, 0.17);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(246, 217, 52, 0.13);
+}
