@@ -13,7 +13,7 @@ function heads() {
     ).innerHTML = `${firstName} selected ${coinFace}`;
     document.getElementById(
       "secondPlayerSelected"
-    ).innerHTML = `${secondName} selected tails`;
+    ).innerHTML = `${secondName} selected Tails`;
   } else {
     Swal.fire("Please enter both players name");
   }
@@ -30,7 +30,7 @@ function tails() {
     ).innerHTML = `${firstName} selected ${coinFace}`;
     document.getElementById(
       "secondPlayerSelected"
-    ).innerHTML = `${secondName} selected heads`;
+    ).innerHTML = `${secondName} selected Heads`;
   } else {
     Swal.fire("Please enter both players name");
   }
