@@ -53,11 +53,13 @@ function flipCoin() {
         document.getElementById("img").src = `./Assets/Tails.png`;
       }
 
-      if (coinFace === coinValue) {
-        Swal.fire(`Its a ${coinValue}, ${firstName} is winner`);
-      } else {
-        Swal.fire(`Its a ${coinValue}, ${secondName} is winner`);
-      }
+      setTimeout(() => {
+        if (coinFace === coinValue) {
+          Swal.fire(`Its a ${coinValue}, ${firstName} is winner`);
+        } else {
+          Swal.fire(`Its a ${coinValue}, ${secondName} is winner`);
+        }
+      }, 600);
     }, 2000);
   } else {
     Swal.fire("Please select Heads of Tails");
